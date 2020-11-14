@@ -14,19 +14,19 @@ Now, you have the following commands to use:
 
 This command toggles the highlighting of all occurrences of the last search pattern. Say, for instance, that you just searched for the word *amar* in the following verses from Drummond:
 
-> Que pode uma criatura senão,
-> Entre criaturas, amar?
-> Amar e esquecer, amar e malamar,
-> Amar, desamar, amar?
-> Sempre, e até de olhos vidrados, amar?
+    Que pode uma criatura senão,
+    Entre criaturas, amar?
+    Amar e esquecer, amar e malamar,
+    Amar, desamar, amar?
+    Sempre, e até de olhos vidrados, amar?
 
 Then, by running `highlight-search-toggle`, all occurrences of *amar* will be highlighted:
 
-> Que pode uma criatura senão,
-> Entre criaturas, **amar**?
-> Amar e esquecer, **amar** e mal**amar**,
-> Amar, des**amar**, **amar**?
-> Sempre, e até de olhos vidrados, **amar**?
+    Que pode uma criatura senão,
+    Entre criaturas, _amar_?
+    Amar e esquecer, _amar_ e mal_amar_,
+    Amar, des_amar_, _amar_?
+    Sempre, e até de olhos vidrados, _amar_?
 
 Running it again will undo the highlighting.
 
