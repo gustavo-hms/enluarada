@@ -2,9 +2,9 @@ provide-module enluarada-search-tools %[
 
 require-module luar
 
-declare-option str highlight_search_with_face +ub -docstring %{
+declare-option -docstring %{
     face used to highlight occurrences of the last search pattern.
-}
+} str highlight_search_with_face +ub
 
 declare-option -hidden bool highlight_search_on false
 
