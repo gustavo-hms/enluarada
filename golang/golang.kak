@@ -1,3 +1,7 @@
+provide-module enluarada-golang %[
+
+require-module luar
+
 define-command golang-alternative-file -docstring %{
     golang-alternative-file: jump to the corresponding test file if you are on an implementation file and vice-versa.
 } %{
@@ -13,3 +17,5 @@ define-command golang-alternative-file -docstring %{
         kak.edit(alternative)
     }
 }
+
+]

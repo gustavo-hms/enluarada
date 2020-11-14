@@ -4,6 +4,16 @@ Even though it uses the `ctags` program to generate the tags, there's no need to
 
 It's known to work well with [Universal Ctags](https://ctags.io/). Other `ctags` implementations are untested. Since Universal Ctags supports [a lot of filetypes](https://github.com/universal-ctags/ctags/tree/master/parsers), you gain code navigation for all of them for free.
 
+### Usage
+
+First, require the provided module:
+
+```kak
+require-module enluarada-tag
+```
+
+Now, just use the `tag` command as explained above.
+
 ### Suggested mapping
 
 You can map the `tag` command to a key for fast tag selection:

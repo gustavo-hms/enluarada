@@ -1,5 +1,42 @@
 The file `search-tools.kak`, despite its name, is inspired by a Vim plugin called [vim-visual-multi](https://github.com/mg979/vim-visual-multi). Using the commands provided here, you can create multiple selections in a way similar to how Sublime Text achieve it.
 
+### Ussage
+
+First, require the provided module:
+
+```kak
+require-module enluarada-search-tools
+```
+
+Now, you have the following commands to use:
+
+#### `highlight-search-toggle`
+
+This command toggles the highlighting of all occurrences of the last search pattern. Say, for instance, that you just searched for the word *amar* in the following verses from Drummond:
+
+> Que pode uma criatura senão,
+> Entre criaturas, amar?
+> Amar e esquecer, amar e malamar,
+> Amar, desamar, amar?
+> Sempre, e até de olhos vidrados, amar?
+
+Then, by running `highlight-search-toggle`, all occurrences of *amar* will be highlighted:
+
+> Que pode uma criatura senão,
+> Entre criaturas, **amar**?
+> Amar e esquecer, **amar** e mal**amar**,
+> Amar, des**amar**, **amar**?
+> Sempre, e até de olhos vidrados, **amar**?
+
+Running it again will undo the highlighting.
+
+#### `search-word-or-selection`
+
+This command works similarly to the built-in `*` key, except for two differences:
+
+- if the current selection is just one character long, it first selects the word under the cursor and then set the search pattern to the main selection;
+- if automatically activates the highlighting of matches of the search pattern. This way you can easily visualise the occurrences of some pattern in your buffer.
+
 ### Suggested mappings
 
 Define

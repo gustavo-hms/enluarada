@@ -1,10 +1,14 @@
+provide-module enluarada-search-tools %[
+
+require-module luar
+
 set-option str highlight_search_with_face +ub -docstring %{
     face used to highlight occurrences of the last search pattern.
 }
 
 declare-option -hidden bool highlight_search_on false
 
-define-command highlight-search-on -docstring %{
+define-command -hidden highlight-search-on -docstring %{
     highlight-search-on: highlight all occurrences of the last search pattern.
 } %{
     lua %opt{highlight_search_on} %opt{highlight_search_with_face} %{
@@ -46,3 +50,5 @@ define-command search-word-or-selection -docstring %{
     execute-keys -save-regs '' *
     highlight-search-on
 }
+
+]

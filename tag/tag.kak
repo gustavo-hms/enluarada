@@ -1,3 +1,7 @@
+provide-module enluarada-tag %[
+
+require-module luar
+
 # We are going to parse the ctags output. Say we have the following Lua file:
 #     
 #     function primeira(um, dois)
@@ -46,3 +50,5 @@ define-command tag -menu -params 1 -docstring %{
         end
     }
 }
+
+]
