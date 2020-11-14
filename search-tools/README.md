@@ -1,6 +1,6 @@
 The file `search-tools.kak`, despite its name, is inspired by a Vim plugin called [vim-visual-multi](https://github.com/mg979/vim-visual-multi). Using the commands provided here, you can create multiple selections in a way similar to how Sublime Text achieve it.
 
-### Ussage
+### Usage
 
 First, require the provided module:
 
