@@ -15,10 +15,10 @@ define-command -hidden highlight-search-on -docstring %{
         local on, face = args()
 
         if not on then
-            kak.add_highlighter("window/highlight-search", "dynregex", "%reg{/}", "0:" .. face)
+            kak.add_highlighter("buffer/highlight-search", "dynregex", "%reg{/}", "0:" .. face)
         end
 
-        kak.set_option("window", "highlight_search_on", true)
+        kak.set_option("buffer", "highlight_search_on", true)
     }
 }
 
@@ -29,12 +29,12 @@ define-command highlight-search-toggle -docstring %{
         local on, face = args()
 
         if on then
-            kak.remove_highlighter("window/highlight-search")
+            kak.remove_highlighter("buffer/highlight-search")
         else
-            kak.add_highlighter("window/highlight-search", "dynregex", "%reg{/}", "0:" .. face)
+            kak.add_highlighter("buffer/highlight-search", "dynregex", "%reg{/}", "0:" .. face)
         end
 
-        kak.set_option("window", "highlight_search_on", not on)
+        kak.set_option("buffer", "highlight_search_on", not on)
     }
 }
 
